@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtZ-hn-Kvu">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtZ-hn-Kvu">
                                 <rect key="frame" x="132" y="747" width="150" height="62"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,6 +40,9 @@
                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="40"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toggleButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8a-cl-IzU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,10 +68,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q2M-tL-3kg" secondAttribute="trailing" constant="132" id="wMj-LG-Wmi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="zbh-zE-gcU" id="V1Z-1e-Lzs"/>
+                        <outlet property="redLightView" destination="538-mF-L0G" id="JMM-oK-TRB"/>
+                        <outlet property="toggleButton" destination="LtZ-hn-Kvu" id="DB9-R3-Bxp"/>
+                        <outlet property="yellowLightView" destination="q2M-tL-3kg" id="3Hn-Py-dQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-494" y="-42"/>
         </scene>
     </scenes>
     <resources>
