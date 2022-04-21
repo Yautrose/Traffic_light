@@ -36,7 +36,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func toggleButtonAction() {
+        let trafficLightAlpha = 1.0
         
+        switch trafficLightAlpha {
+        case redLightView.alpha :
+            redLightView.alpha = 0.3
+            yellowLightView.alpha = 1.0
+        case yellowLightView.alpha :
+            yellowLightView.alpha = 0.3
+            greenLightView.alpha = 1.0
+        case greenLightView.alpha :
+            redLightView.alpha = 1.0
+            greenLightView.alpha = 0.3
+        default :
+            redLightView.alpha = 1.0
+            toggleButton.setTitle("Next", for: .normal)
+        }
     }
     
 }
