@@ -19,16 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         redLightView.alpha = 0.3
-        redLightView.layer.cornerRadius = redLightView.frame.height/2
+        redLightView.layer.cornerRadius = redLightView.frame.width/2
         //redLightView.layer.borderWidth = 1
         //redLightView.layer.masksToBounds = false
         //redLightView.clipsToBounds = true
         
         yellowLightView.alpha = 0.3
-        yellowLightView.layer.cornerRadius = yellowLightView.frame.height/2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width/2
         
         greenLightView.alpha = 0.3
-        greenLightView.layer.cornerRadius = greenLightView.frame.height/2
+        greenLightView.layer.cornerRadius = greenLightView.frame.width/2
         
         toggleButton.layer.cornerRadius = 10
         
